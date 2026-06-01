@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "title": "太子花园 (Prince's Garden / Княжеска градина) – 索非亚, 保加利亚",
+    "description": "太子花园完整旅游指南。了解这个历史公园，包括位置、特色、交通和游览信息。"
+  },
+  "header": {
+    "home": "首页",
+    "gallery": "图库",
+    "reviews": "评价",
+    "map": "地图",
+    "backToHome": "返回首页"
+  },
+  "hero": {
+    "title": "太子花园",
+    "subtitle": "公园 · 索非亚，保加利亚",
+    "rating": "4.5",
+    "reviewCount": "7,870 条评价",
+    "type": "公园",
+    "openMaps": "在Google地图上查看位置",
+    "mapsLink": "https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8"
+  },
+  "intro": {
+    "title": "探索太子花园",
+    "description": "太子花园（Княжеска градина）是索非亚最美丽和历史最悠久的公园之一。位于城市中心，提供宁静的环境供散步、休闲和享受大自然。公园以其丰富的植被、美丽的林荫道和历史意义而闻名。",
+    "visitGuide": {
+      "title": "游览建议",
+      "items": [
+        "最佳游览时间是春季和秋季。",
+        "穿舒适的鞋子散步。",
+        "公园非常适合野餐和休闲。",
+        "不要错过美丽的花径。"
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "亮点",
+      "items": [
+        "历史遗产",
+        "丰富的植被",
+        "中心位置",
+        "宁静的氛围"
+      ]
+    }
+  },
+  "knowledge": {
+    "title": "关于太子花园",
+    "sections": [
+      {
+        "id": "history",
+        "title": "历史与创建",
+        "content": "太子花园建于19世纪，是索非亚最古老和最美丽的公园之一。它的名字是为了纪念保加利亚国家和亲王历史。"
+      },
+      {
+        "id": "geography",
+        "title": "位置与特色",
+        "content": "位于索非亚市中心，埃夫洛吉和赫里斯托·格奥尔基耶夫大道99A。公园交通便利，提供宽敞的散步小径。"
+      },
+      {
+        "id": "architecture",
+        "title": "植被与设计",
+        "content": "公园拥有多样化的植被，包括古树、花坛和维护良好的小径。设计结合了美学和功能性。"
+      },
+      {
+        "id": "protection",
+        "title": "保护与管理",
+        "content": "公园由索非亚市市政局维护，是索非亚市中心受保护的休闲和旅游区。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题解答",
+    "items": [
+      {
+        "question": "公园的开放时间是什么？",
+        "answer": "公园每天对游客开放，全年无休。建议白天参观。"
+      },
+      {
+        "question": "需要门票吗？",
+        "answer": "不需要，公园对所有游客免费开放。"
+      },
+      {
+        "question": "允许携带宠物吗？",
+        "answer": "允许，但宠物必须拴在牵引绳上并受到控制。"
+      },
+      {
+        "question": "轮椅使用者可以进入吗？",
+        "answer": "可以，小径平坦，方便轮椅使用者和行动不便的人士。"
+      }
+    ]
+  },
+  "basicInfo": {
+    "title": "基础信息",
+    "officialName": "正式名称",
+    "officialNameValue": "太子花园 (Prince's Garden / Княжеска градина)",
+    "type": "景点类型",
+    "typeValue": "公园 / 花园",
+    "country": "国家",
+    "countryValue": "保加利亚",
+    "city": "城市",
+    "cityValue": "索非亚",
+    "googleRating": "谷歌评分",
+    "googleRatingValue": "4.5 (7,870)",
+    "address": "地址",
+    "addressValue": "索非亚市中心，埃夫洛吉和赫里斯托·格奥尔基耶夫大道99A，1000 索非亚，保加利亚",
+    "telephone": "联系电话",
+    "telephoneValue": "+359 2 491 8344",
+    "accessibility": "无障碍设施",
+    "accessibilityValue": "完全无障碍",
+    "plusCode": "Plus Code",
+    "plusCodeValue": "M8RM+3G"
+  },
+  "hours": {
+    "title": "开放时间",
+    "park": "公园开放",
+    "parkTime": "每天开放，全年无休",
+    "bestTime": "最佳游览时间",
+    "bestTimeSpring": "春季：鲜花盛开，天气宜人",
+    "bestTimeSummer": "夏季：树荫遮阳，凉爽宜人",
+    "bestTimeAutumn": "秋季：美丽的秋色",
+    "bestTimeWinter": "冬季：宁静的氛围",
+    "tip": "建议白天参观。公园非常适合散步和休闲。"
+  },
+  "tickets": {
+    "title": "门票信息",
+    "park": "公园入园",
+    "parkPrice": "免费",
+    "parking": "停车",
+    "parkingPrice": "周边有街头停车",
+    "guided": "导游服务",
+    "guidedPrice": "无官方导游服务"
+  },
+  "transport": {
+    "title": "交通指南",
+    "fromCenter": "从索非亚市中心",
+    "fromCenterDesc": "位于市中心，乘坐地铁、公交或步行均可轻松到达。",
+    "fromStation": "公共交通",
+    "fromStationDesc": "索非亚大学地铁站步行可达。",
+    "fromAirport": "从机场",
+    "fromAirportDesc": "地铁2号线直达索非亚市中心。",
+    "publicTransport": "公共交通",
+    "publicTransportDesc": "地铁、公交和电车均在附近停靠。",
+    "walking": "步行",
+    "walkingDesc": "从市中心步行非常方便。",
+    "driving": "自驾",
+    "drivingDesc": "驾车方便到达，有街头停车。"
+  },
+  "route": {
+    "title": "推荐游览路线",
+    "overview": "探索公园和周边地区。",
+    "steps": [
+      "从主入口进入太子花园",
+      "沿着主林荫道散步",
+      "参观历史纪念碑",
+      "欣赏花坛和植被",
+      "在长椅上休息，享受氛围"
+    ]
+  },
+  "gallery": {
+    "title": "照片画廊",
+    "subtitle": "太子花园之美",
+    "captions": [
+      "公园主入口",
+      "花径",
+      "绿色空间",
+      "历史纪念碑",
+      "树木和植被",
+      "散步小径",
+      "在大自然中休闲",
+      "建筑细节",
+      "春日美景",
+      "秋日色彩",
+      "冬日氛围",
+      "夏日绿景",
+      "公园里的纪念碑",
+      "花坛"
+    ],
+    "viewAll": "在Google地图上查看位置",
+    "showAll": "显示完整照片",
+    "showLess": "收起照片"
+  },
+  "reviews": {
+    "title": "游客评价",
+    "declaration": "评价信息可通过Google地图查看。",
+    "moreReviews": "在Google地图上查看更多评价",
+    "items": [
+      {
+        "name": "伊万 P.",
+        "rating": 5,
+        "date": "2026-05-15",
+        "text": "索非亚市中心的绝佳公园！非常适合散步和休闲。"
+      },
+      {
+        "name": "玛丽亚 S.",
+        "rating": 5,
+        "date": "2026-04-22",
+        "text": "非常美丽的公园，植被丰富。最喜欢的散步地点。"
+      },
+      {
+        "name": "格奥尔基 T.",
+        "rating": 4,
+        "date": "2026-03-10",
+        "text": "不错的公园，维护良好。推荐给有孩子的家庭。"
+      },
+      {
+        "name": "埃琳娜 R.",
+        "rating": 5,
+        "date": "2026-02-18",
+        "text": "索非亚最好的散步地点之一。宁静而美丽！"
+      },
+      {
+        "name": "尼古拉 D.",
+        "rating": 5,
+        "date": "2026-01-25",
+        "text": "具有独特氛围的历史公园。索非亚必游之地。"
+      },
+      {
+        "name": "塔尼娅 K.",
+        "rating": 4,
+        "date": "2025-12-30",
+        "text": "位于索非亚市中心的美丽公园。非常适合休息和散步。"
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "地图位置",
+    "subtitle": "M8RM+3G, 索非亚, 保加利亚",
+    "openMaps": "在Google地图上查看位置"
+  },
+  "footer": {
+    "brandName": "太子花园",
+    "brandSubtitle": "公园 · 索非亚，保加利亚",
+    "rights": "© 2026 独立旅游研究项目 · 保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "cookies": "Cookie 设置",
+    "officialResourcesTitle": "官方资源与资讯",
+    "officialLinks": {
+      "sofiaTourism": "索菲亚市旅游局",
+      "bulgariaTourism": "保加利亚共和国旅游部",
+      "bulgariaCulture": "保加利亚文化部",
+      "ninkn": "保加利亚文化遗产研究所(НИНКН)",
+      "mfa": "保加利亚共和国外交部领事服务局"
+    },
+    "disclaimer": "本网站是一个独立的第三方旅游资讯项目。我们与当地政府或其他官方机构没有任何关联。"
+  },
+  "officialManagement": {
+    "title": "关于太子花园",
+    "text": "太子花园由索非亚市市政局管理和维护。公园是索非亚市中心受保护的休闲和旅游区。"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2026年6月",
+    "sections": [
+      {
+        "heading": "信息收集",
+        "content": "当您访问我们的网站时，我们可能会自动收集有关您的设备、浏览器和浏览行为的基本信息，以提供更好的用户体验。"
+      },
+      {
+        "heading": "Cookie的使用",
+        "content": "我们使用cookie来分析网站流量并优化页面内容。您可以随时管理您的偏好。"
+      },
+      {
+        "heading": "数据安全与保护",
+        "content": "我们致力于保护您的数据安全，不会将您的信息出售或分发给第三方。"
+      }
+    ]
+  },
+  "terms": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新：2026年6月",
+    "sections": [
+      {
+        "heading": "网站内容与使用",
+        "content": "本网站提供有关太子花园的旅游信息。所有内容仅供参考。"
+      },
+      {
+        "heading": "知识产权",
+        "content": "本网站上的文本、图像和设计受版权保护。"
+      },
+      {
+        "heading": "免责声明",
+        "content": "我们努力确保信息的准确性，但对于信息的变化或不准确不承担法律责任。"
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie 设置",
+    "description": "管理您的 Cookie 偏好。",
+    "essential": {
+      "title": "必要的 Cookie",
+      "description": "基本网站功能所必需的。",
+      "badge": "始终开启"
+    },
+    "analytics": {
+      "title": "分析",
+      "description": "帮助我们了解访问者行为并改进网站。"
+    },
+    "marketing": {
+      "title": "营销",
+      "description": "用于跨站跟踪和提供个性化广告。"
+    },
+    "save": "保存偏好",
+    "saved": "偏好已保存！"
+  }
+}

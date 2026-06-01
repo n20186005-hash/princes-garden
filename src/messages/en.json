@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "title": "Prince's Garden (Княжеска градина) – Sofia, Bulgaria",
+    "description": "Complete travel guide to Prince's Garden in Sofia. Learn about this historic park, including location, features, access, and visitor information."
+  },
+  "header": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "map": "Map",
+    "backToHome": "Back to Home"
+  },
+  "hero": {
+    "title": "Prince's Garden",
+    "subtitle": "Park · Sofia, Bulgaria",
+    "rating": "4.5",
+    "reviewCount": "7,870 reviews",
+    "type": "Park",
+    "openMaps": "View on Google Maps",
+    "mapsLink": "https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8"
+  },
+  "intro": {
+    "title": "Discover Prince's Garden",
+    "description": "Prince's Garden (Княжеска градина) is one of the most beautiful and historic parks in Sofia. Located in the heart of the city, it offers a peaceful environment for walking, relaxation, and enjoying nature. The park is known for its rich vegetation, beautiful alleys, and historical significance.",
+    "visitGuide": {
+      "title": "Visit Tips",
+      "items": [
+        "Best time to visit is spring and autumn.",
+        "Wear comfortable shoes for walking.",
+        "The park is perfect for picnics and relaxation.",
+        "Don't miss the beautiful flower alleys."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Highlights",
+      "items": [
+        "Historical heritage",
+        "Rich vegetation",
+        "Central location",
+        "Peaceful atmosphere"
+      ]
+    }
+  },
+  "knowledge": {
+    "title": "About Prince's Garden",
+    "sections": [
+      {
+        "id": "history",
+        "title": "History & Creation",
+        "content": "Prince's Garden was created in the 19th century and is one of the oldest and most beautiful parks in Sofia. It bears its name in honor of Bulgarian statehood and princely history."
+      },
+      {
+        "id": "geography",
+        "title": "Location & Features",
+        "content": "Located in the center of Sofia, at 99A Evlogi i Hristo Georgiev Blvd. The park is easily accessible by public transport and offers spacious alleys for walking."
+      },
+      {
+        "id": "architecture",
+        "title": "Vegetation & Design",
+        "content": "The park features diverse vegetation, including old trees, flower beds, and well-maintained alleys. The design combines aesthetics and functionality."
+      },
+      {
+        "id": "protection",
+        "title": "Preservation & Management",
+        "content": "The park is maintained by Sofia Municipality and is a protected zone for recreation and tourism in the center of Sofia."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What are the opening hours of the park?",
+        "answer": "The park is open to visitors every day, year-round. Daytime visits are recommended."
+      },
+      {
+        "question": "Is there an entrance fee?",
+        "answer": "No, entrance to the park is free for all visitors."
+      },
+      {
+        "question": "Are pets allowed?",
+        "answer": "Yes, pets are welcome but must be on a leash and under control."
+      },
+      {
+        "question": "Is the park accessible for wheelchair users?",
+        "answer": "Yes, the alleys are flat and accessible for wheelchair users and people with reduced mobility."
+      }
+    ]
+  },
+  "basicInfo": {
+    "title": "Basic Information",
+    "officialName": "Official Name",
+    "officialNameValue": "Prince's Garden (Княжеска градина)",
+    "type": "Attraction Type",
+    "typeValue": "Park / Garden",
+    "country": "Country",
+    "countryValue": "Bulgaria",
+    "city": "City",
+    "cityValue": "Sofia",
+    "googleRating": "Google Rating",
+    "googleRatingValue": "4.5 (7,870)",
+    "address": "Address",
+    "addressValue": "Sofia Center, Evlogi i Hristo Georgiev Blvd 99A, 1000 Sofia, Bulgaria",
+    "telephone": "Contact Phone",
+    "telephoneValue": "+359 2 491 8344",
+    "accessibility": "Accessibility",
+    "accessibilityValue": "Fully accessible",
+    "plusCode": "Plus Code",
+    "plusCodeValue": "M8RM+3G"
+  },
+  "hours": {
+    "title": "Visiting Hours",
+    "park": "Park Access",
+    "parkTime": "Open every day, year-round",
+    "bestTime": "Best Time to Visit",
+    "bestTimeSpring": "Spring: Blooming flowers and pleasant weather",
+    "bestTimeSummer": "Summer: Shade from trees, cool atmosphere",
+    "bestTimeAutumn": "Autumn: Beautiful autumn colors",
+    "bestTimeWinter": "Winter: Peaceful atmosphere",
+    "tip": "Daytime visits are recommended. The park is perfect for walking and relaxation."
+  },
+  "tickets": {
+    "title": "Admission Information",
+    "park": "Park Entry",
+    "parkPrice": "Free",
+    "parking": "Parking",
+    "parkingPrice": "Street parking available in the area",
+    "guided": "Guided Tours",
+    "guidedPrice": "No official guided tours"
+  },
+  "transport": {
+    "title": "How to Get Here",
+    "fromCenter": "From Sofia Center",
+    "fromCenterDesc": "Located in the center, easily accessible by metro, bus, or on foot.",
+    "fromStation": "By Public Transport",
+    "fromStationDesc": "Sofia University metro station is within walking distance.",
+    "fromAirport": "From the Airport",
+    "fromAirportDesc": "Metro Line 2 directly to the center of Sofia.",
+    "publicTransport": "Public Transport",
+    "publicTransportDesc": "Metro, buses, and trams stop nearby.",
+    "walking": "Walking",
+    "walkingDesc": "Perfect for walking from the center.",
+    "driving": "Driving",
+    "drivingDesc": "Easy access by car, street parking available."
+  },
+  "route": {
+    "title": "Recommended Route",
+    "overview": "Explore the park and surrounding areas.",
+    "steps": [
+      "Enter Prince's Garden from the main entrance",
+      "Walk along the main alley",
+      "Visit the historical monuments",
+      "Enjoy the flower beds and vegetation",
+      "Relax on a bench and enjoy the atmosphere"
+    ]
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "The Beauty of Prince's Garden",
+    "captions": [
+      "Main park entrance",
+      "Flower alleys",
+      "Green spaces",
+      "Historical monuments",
+      "Trees and vegetation",
+      "Walking alleys",
+      "Relaxing in nature",
+      "Architectural details",
+      "Spring beauty",
+      "Autumn colors",
+      "Winter atmosphere",
+      "Summer green landscape",
+      "Monuments in the park",
+      "Flower beds"
+    ],
+    "viewAll": "View on Google Maps",
+    "showAll": "View All Photos",
+    "showLess": "Show Less"
+  },
+  "reviews": {
+    "title": "Visitor Reviews",
+    "declaration": "Reviews can be viewed via Google Maps.",
+    "moreReviews": "View more reviews on Google Maps",
+    "items": [
+      {
+        "name": "Ivan P.",
+        "rating": 5,
+        "date": "2026-05-15",
+        "text": "Wonderful park in the heart of Sofia! Perfect place for a walk and relaxation."
+      },
+      {
+        "name": "Maria S.",
+        "rating": 5,
+        "date": "2026-04-22",
+        "text": "Very beautiful park with rich vegetation. Favorite place for walks."
+      },
+      {
+        "name": "Georgi T.",
+        "rating": 4,
+        "date": "2026-03-10",
+        "text": "Nice park, well maintained. Recommended for families with children."
+      },
+      {
+        "name": "Elena R.",
+        "rating": 5,
+        "date": "2026-02-18",
+        "text": "One of the best places for a walk in Sofia. Peaceful and beautiful!"
+      },
+      {
+        "name": "Nikolay D.",
+        "rating": 5,
+        "date": "2026-01-25",
+        "text": "Historic park with unique atmosphere. A must-visit in Sofia."
+      },
+      {
+        "name": "Tanya K.",
+        "rating": 4,
+        "date": "2025-12-30",
+        "text": "Beautiful park in the center of Sofia. Perfect for rest and walks."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "Map Location",
+    "subtitle": "M8RM+3G, Sofia, Bulgaria",
+    "openMaps": "View on Google Maps"
+  },
+  "footer": {
+    "brandName": "Prince's Garden",
+    "brandSubtitle": "Park · Sofia, Bulgaria",
+    "rights": "© 2026 Independent Tourism Research Project · All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings",
+    "officialResourcesTitle": "Official Resources & Information",
+    "officialLinks": {
+      "sofiaTourism": "Sofia City Tourism",
+      "bulgariaTourism": "Ministry of Tourism",
+      "bulgariaCulture": "Ministry of Culture",
+      "ninkn": "NIKN",
+      "mfa": "MFA - Consular Services"
+    },
+    "disclaimer": "This website is an independent third-party tourism information project. We are not affiliated with the local government or any other official agencies."
+  },
+  "officialManagement": {
+    "title": "About Prince's Garden",
+    "text": "Prince's Garden is managed and maintained by Sofia Municipality. The park is a protected zone for recreation and tourism in the center of Sofia."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 2026",
+    "sections": [
+      {
+        "heading": "Information Collection",
+        "content": "When you visit our website, we may automatically collect basic information about your device, browser, and browsing behavior to provide a better user experience."
+      },
+      {
+        "heading": "Use of Cookies",
+        "content": "We use cookies to analyze website traffic and optimize page content. You can manage your preferences at any time."
+      },
+      {
+        "heading": "Data Security and Protection",
+        "content": "We are committed to protecting the security of your data and will not sell or distribute your information to third parties."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: June 2026",
+    "sections": [
+      {
+        "heading": "Website Content and Use",
+        "content": "This website provides tourism information about Prince's Garden. All content is for reference only."
+      },
+      {
+        "heading": "Intellectual Property",
+        "content": "The text, images, and designs on this website are protected by copyright."
+      },
+      {
+        "heading": "Disclaimer",
+        "content": "We strive for accuracy but do not assume legal responsibility for changes or inaccuracies in the information provided."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie Settings",
+    "description": "Manage your cookie preferences.",
+    "essential": {
+      "title": "Essential Cookies",
+      "description": "Necessary for basic website functionality.",
+      "badge": "Always Active"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Help us understand visitor behavior and improve the website."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Used for cross-site tracking and delivering personalized ads."
+    },
+    "save": "Save Preferences",
+    "saved": "Preferences Saved!"
+  }
+}
