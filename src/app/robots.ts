@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://princes-garden.com/sitemap.xml',
+    sitemap: 'https://princesgardensofia.com/sitemap.xml',
   };
 }

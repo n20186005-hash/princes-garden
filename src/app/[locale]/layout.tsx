@@ -15,12 +15,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const messages = (await import(`@/messages/${locale}.json`)).default;
-  const baseUrl = 'https://kourionamphitheater.com';
+  const baseUrl = 'https://princesgardensofia.com';
 
   const zhUrl = `${baseUrl}/zh`;
   const enUrl = `${baseUrl}/en`;
-  const elUrl = `${baseUrl}/el`;
-  const trUrl = `${baseUrl}/tr`;
+  const bgUrl = `${baseUrl}/bg`;
   const selfUrl = `${baseUrl}/${locale}`;
 
   return {
@@ -30,8 +29,8 @@ export async function generateMetadata({
     openGraph: {
       title: messages.meta.title,
       description: messages.meta.description,
-      siteName: "Kourion Ancient Amphitheater",
-      locale: locale === 'zh' ? 'zh_CN' : locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'tr_TR',
+      siteName: "Prince's Garden Sofia",
+      locale: locale === 'zh' ? 'zh_CN' : locale === 'en' ? 'en_US' : 'bg_BG',
       type: 'website',
     },
   };
@@ -54,7 +53,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale === 'zh' ? 'zh-CN' : locale === 'el' ? 'el-GR' : 'en'} suppressHydrationWarning>
+    <html lang={locale === 'zh' ? 'zh-CN' : locale === 'bg' ? 'bg-BG' : 'en'} suppressHydrationWarning>
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossOrigin="anonymous" />
         <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />

@@ -20,7 +20,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = 'https://princes-garden.com';
+  const baseUrl = 'https://princesgardensofia.com';
   return {
     alternates: {
       canonical: `${baseUrl}/${locale}`,

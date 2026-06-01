@@ -1,7 +1,7 @@
 princes-garden
 
 我们网站是
-XXXXXXXXXX
+princesgardensofia.com
 检查一遍看下是否有错误
 
 丰富下页面内容现在的内容还是太薄的了
@@ -22,6 +22,21 @@ Sofia Center, Evlogi i Hristo Georgiev Blvd 99А, 1000 Sofia, 保加利亚
 +35924918344
 M8RM+3G 索非亚 保加利亚
 https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8
+
+
+字段	填写内容	说明
+国家 / 地区 *	保加利亚（Bulgaria）	下拉选择
+地址行 1*	Evlogi i Hristo Georgiev Blvd 99А	填写街道和门牌号
+地址行 2	Sofia Center, Prince's Garden（可选留空）	补充街区 / 地点名称
+城市 *	Sofia（索非亚）	填写城市名
+省 / 自治区 / 直辖市 *	Sofia City Province（索非亚市州 / 索菲亚首都省）	保加利亚的省级行政区为 “州（oblast）”，索非亚的对应行政区是 Sofia City / Sofia City Province
+邮政编码 *	1000	索非亚市中心的邮编
+
+
+
+
+单景点页面推荐域名名称哦
+
 
 首屏背景图要引用以下
 
