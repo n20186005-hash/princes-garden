@@ -1,0 +1,93 @@
+princes-garden
+
+我们网站是
+XXXXXXXXXX
+检查一遍看下是否有错误
+
+丰富下页面内容现在的内容还是太薄的了
+
+
+
+你正在用（Next.js开发）
+为一个新景点【 Prince's Garden 】构建静态/Next.js 单页指南网站。
+页面只需要支持中文和英文双语言
+
+princes-garden
+索菲亚市	Prince's Garden
+太子花园
+Княжеска градина
+4.5(7,870)
+公园
+Sofia Center, Evlogi i Hristo Georgiev Blvd 99А, 1000 Sofia, 保加利亚
++35924918344
+M8RM+3G 索非亚 保加利亚
+https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8
+
+首屏背景图要引用以下
+
+C:\Users\Administrator\Downloads\保加利亚\princes-garden\public\gallery
+
+
+删除原先友情链接，新增以下友情链接
+
+
+索菲亚市旅游局
+http://visitsofia.bg/
+
+保加利亚共和国旅游部
+https://www.tourism.government.bg/
+
+保加利亚文化部
+https://mc.government.bg/
+
+保加利亚文化遗产研究所(НИНКН)
+http://ninkn.bg/
+
+保加利亚共和国外交部领事服务局
+https://www.mfa.bg/en/services-travel/consular-services/travel-bulgaria/visa-bulgaria
+
+
+在Google地图上查看位置都跳转为 https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8
+页面一共四个链接每一个都需要修改
+
+
+照片画廊
+精彩照片 显示照片不全目前只显示8张，需要有显示完整照片显示功能
+检查照片名称是否正确并修正
+
+
+删除 探索更多 板块
+
+
+首屏谷歌地图位置跳转为 https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8
+
+照片画廊
+在Google地图上查看位置跳转为 https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8
+
+游客评价
+在Google地图上查看位置跳转为 https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8
+
+地图位置
+在Google地图上查看位置跳转为 https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8
+
+首屏右侧切换中文的时候 网站没转为/zh
+
+新增
+保加利亚语（Български）
+
+生成一个文件忽略不需要上传的文件
+
+
+
+
+
+
+
+
+买域名推荐
+
+
+
+
+我们网站是
+检查下有没有错误
