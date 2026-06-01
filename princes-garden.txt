@@ -4,7 +4,15 @@ princes-garden
 princesgardensofia.com
 检查一遍看下是否有错误
 
+https://www.princesgardensofia.com/
+1、首屏背景显示错误
+2、照片画廊显示错误
+3、照片画廊 在Google地图上查看位置 应该改为在Google上查看更多图像
+
 丰富下页面内容现在的内容还是太薄的了
+
+
+
 
 
 

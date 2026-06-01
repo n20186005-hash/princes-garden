@@ -131,17 +131,17 @@
   "transport": {
     "title": "交通指南",
     "fromCenter": "从索非亚市中心",
-    "fromCenterDesc": "位于市中心，乘坐地铁、公交或步行均可轻松到达。",
-    "fromStation": "公共交通",
-    "fromStationDesc": "索非亚大学地铁站步行可达。",
-    "fromAirport": "从机场",
-    "fromAirportDesc": "地铁2号线直达索非亚市中心。",
-    "publicTransport": "公共交通",
-    "publicTransportDesc": "地铁、公交和电车均在附近停靠。",
-    "walking": "步行",
-    "walkingDesc": "从市中心步行非常方便。",
-    "driving": "自驾",
-    "drivingDesc": "驾车方便到达，有街头停车。"
+    "fromCenterDesc": "太子花园位于索非亚市中心，毗邻索非亚大学，交通极为便利。",
+    "fromStation": "地铁",
+    "fromStationDesc": "乘坐地铁1号线（红线）或4号线（黄线），在“索非亚大学”（Sofia University St. Kliment Ohridski）站下车，出站步行1-2分钟即可到达公园入口。",
+    "fromAirport": "公交与电车",
+    "fromAirportDesc": "多条公交和电车线路停靠在公园周围。您可以乘坐公交车 9、72、76、84、94、204、604 路，或电车 10、12、15、18 路在附近站点下车。",
+    "publicTransport": "从机场",
+    "publicTransportDesc": "从索非亚国际机场（SOF）出发，可乘坐地铁4号线直达“索非亚大学”站，车程约30分钟。",
+    "walking": "步行与骑行",
+    "walkingDesc": "如果您住在市中心（如亚历山大·涅夫斯基大教堂附近），步行5-10分钟即可轻松抵达。周边也设有共享自行车停放点。",
+    "driving": "自驾与停车",
+    "drivingDesc": "公园周边提供路边付费停车位（通常为蓝区或绿区，需通过短信或售票机支付）。市中心交通较为拥堵，推荐使用公共交通。"
   },
   "route": {
     "title": "推荐游览路线",
