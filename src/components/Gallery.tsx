@@ -2,6 +2,7 @@
 
 import { useTranslations, useMessages } from 'next-intl';
 import { useState, useCallback } from 'react';
+import Image from 'next/image';
 
 const photos = [
   { src: '/gallery/princes-garden-1.jpg', alt: 'Prince\'s Garden Photo 1' },
@@ -11,13 +12,13 @@ const photos = [
   { src: '/gallery/princes-garden-5.jpg', alt: 'Prince\'s Garden Photo 5' },
   { src: '/gallery/princes-garden-6.jpg', alt: 'Prince\'s Garden Photo 6' },
   { src: '/gallery/princes-garden-7.jpg', alt: 'Prince\'s Garden Photo 7' },
-  { src: '/gallery/princes-garden-8.jpg', alt: 'Prince\'s Garden Photo 8' },
-  { src: '/gallery/princes-garden-9.jpg', alt: 'Prince\'s Garden Photo 9' },
-  { src: '/gallery/princes-garden-10.jpg', alt: 'Prince\'s Garden Photo 10' },
-  { src: '/gallery/princes-garden-11.jpg', alt: 'Prince\'s Garden Photo 11' },
-  { src: '/gallery/princes-garden-12.jpg', alt: 'Prince\'s Garden Photo 12' },
-  { src: '/gallery/princes-garden-13.jpg', alt: 'Prince\'s Garden Photo 13' },
-  { src: '/gallery/princes-garden-14.jpg', alt: 'Prince\'s Garden Photo 14' },
+  { src: '/gallery/princes-garden-10.jpg', alt: 'Prince\'s Garden Photo 8' },
+  { src: '/gallery/princes-garden-12.jpg', alt: 'Prince\'s Garden Photo 9' },
+  { src: '/gallery/princes-garden-13.jpg', alt: 'Prince\'s Garden Photo 10' },
+  { src: '/gallery/princes-garden-14.jpg', alt: 'Prince\'s Garden Photo 11' },
+  { src: '/gallery/princes-garden-15.jpg', alt: 'Prince\'s Garden Photo 12' },
+  { src: '/gallery/princes-garden-16.jpg', alt: 'Prince\'s Garden Photo 13' },
+  { src: '/gallery/princes-garden-17.jpg', alt: 'Prince\'s Garden Photo 14' },
 ];
 
 export default function Gallery() {
@@ -67,13 +68,14 @@ export default function Gallery() {
                 key={i}
                 className={`gallery-item relative group cursor-pointer ${i === 0 ? 'col-span-2 row-span-2' : ''}`}
                 onClick={() => openLightbox(i)}
+                style={{ minHeight: i === 0 ? '400px' : '180px' }}
               >
-                <img
+                <Image
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-full object-cover rounded-lg"
-                  style={{ minHeight: i === 0 ? '400px' : '180px' }}
-                  loading="lazy"
+                  fill
+                  sizes={i === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"}
+                  className="object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors rounded-lg flex items-end">
                   <p className="text-white text-sm p-3 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -124,12 +126,14 @@ export default function Gallery() {
             </svg>
           </button>
 
-          <img
-            src={galleryPhotos[currentIndex].src}
-            alt={galleryPhotos[currentIndex].alt}
-            className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg"
-            onClick={(e) => e.stopPropagation()}
-          />
+          <div className="relative w-[90vw] h-[85vh]" onClick={(e) => e.stopPropagation()}>
+            <Image
+              src={galleryPhotos[currentIndex].src}
+              alt={galleryPhotos[currentIndex].alt}
+              fill
+              className="object-contain rounded-lg"
+            />
+          </div>
 
           <button
             onClick={(e) => { e.stopPropagation(); goToNext(); }}

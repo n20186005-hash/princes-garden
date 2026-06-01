@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -7,12 +8,15 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-end pb-16 sm:pb-24 overflow-hidden">
-      {/* Background image slideshow */}
+      {/* Background image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/gallery/princes-garden-1.jpg"
           alt="Prince's Garden"
-          className="w-full h-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0" style={{ background: 'var(--hero-overlay)' }} />
       </div>
