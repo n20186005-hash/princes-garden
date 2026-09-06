@@ -1,4 +1,5 @@
 import { useTranslations, useMessages } from 'next-intl';
+import { site } from '@/config/site';
 
 function Stars({ count }: { count: number }) {
   return (
@@ -29,7 +30,7 @@ export default function Reviews() {
     text: string;
   }>;
 
-  const mapsLink = 'https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8';
+  const mapsLink = site.mapsShareUrl;
 
   return (
     <section id="reviews" className="section-padding">

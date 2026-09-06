@@ -1,26 +1,62 @@
 {
   "meta": {
-    "title": "Prince's Garden (Княжеска градина) – Sofia, Bulgaria",
-    "description": "Complete travel guide to Prince's Garden in Sofia. Learn about this historic park, including location, features, access, and visitor information."
+    "title": "Prince's Garden Sofia (Knyazheska) – Visitor Guide & Map",
+    "description": "Explore Prince's Garden (Knyazheskata gradina) in central Sofia. Find opening hours, winter ice skating rink details, directions and nearby attractions."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "text": "Sorry, the page you are looking for does not exist or has been moved.",
+    "cta": "Back to Home"
   },
   "header": {
     "home": "Home",
     "gallery": "Gallery",
     "reviews": "Reviews",
     "map": "Map",
-    "backToHome": "Back to Home"
+    "backToHome": "Back to Home",
+    "logo": "Prince's Garden",
+    "winter": "Ice skating"
+  },
+  "winter": {
+    "title": "The Winter Ice Rink in Prince's Garden",
+    "intro": "From the holiday season until late winter, the garden turns into one of Sofia's favourite outdoor playgrounds: a large seasonal ice-skating rink, known locally as Ice Park Sofia, opens in the park and welcomes skaters of every level.",
+    "facts": [
+      {
+        "title": "Season",
+        "text": "Usually runs from early December to the end of February, depending on temperatures and the schedule announced by the organizer."
+      },
+      {
+        "title": "Daily hours",
+        "text": "During the season the rink operates every day, typically in timed sessions from about 10:00 to 21:30–22:00. Exact times change yearly and may be adjusted because of the weather."
+      },
+      {
+        "title": "Entry & skates",
+        "text": "Access is ticket-based, sold per session. Skates can be rented on site, usually for an extra fee and with a deposit. Family-friendly and children's sessions are announced by the organizer."
+      }
+    ],
+    "tipsTitle": "Before you go",
+    "tips": [
+      "Dress warmly – the rink is outdoors: gloves, a hat, warm socks and a windproof outer layer make skating much more enjoyable.",
+      "Arrive at the start of a session to skip the queue; weekends and holiday evenings get busy quickly.",
+      "Check the weather and the latest announcements first – the rink may close during mild weather or rain.",
+      "First time on ice? Beginners' aids and children-friendly sessions are usually available on site; start slowly near the edge."
+    ],
+    "note": "Important: the seasonal dates, timetable, prices and activities are announced by the organizer every year and depend on the weather. The information above is general guidance – always confirm the current season's details from official city announcements before you visit."
   },
   "hero": {
-    "title": "Prince's Garden",
+    "title": "Prince's Garden (Sofia)",
     "subtitle": "Park · Sofia, Bulgaria",
     "rating": "4.5",
-    "reviewCount": "7,870 reviews",
+    "reviewCount": "7,901 reviews",
     "type": "Park",
     "openMaps": "View on Google Maps",
-    "mapsLink": "https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8"
+    "mapsLink": "https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8",
+    "imageAlt": "Prince's Garden - Main view in Sofia, Bulgaria"
   },
   "intro": {
     "title": "Discover Prince's Garden",
+    "breadcrumb": ["Prince's Garden", "Sofia", "Sofia City Province", "Bulgaria"],
+    "statement": "Welcome to Prince's Garden, widely recognized as the beautiful central park of Sofia and locally known as Княжеската градина (Knyazheska gradina). Located in the heart of Sofia, Sofia City Province, Bulgaria, this historic destination serves as a primary green hub for travelers visiting the region.",
     "description": "Prince's Garden (Княжеска градина) is one of the most beautiful and historic parks in Sofia. Located in the heart of the city, it offers a peaceful environment for walking, relaxation, and enjoying nature. The park is known for its rich vegetation, beautiful alleys, and historical significance.",
     "visitGuide": {
       "title": "Visit Tips",
@@ -42,27 +78,64 @@
     }
   },
   "knowledge": {
-    "title": "About Prince's Garden",
+    "title": "The Story of Prince's Garden",
     "sections": [
       {
-        "id": "history",
-        "title": "History & Creation",
-        "content": "Prince's Garden was created in the 19th century and is one of the oldest and most beautiful parks in Sofia. It bears its name in honor of Bulgarian statehood and princely history."
+        "id": "name",
+        "title": "A name fit for a prince",
+        "content": "The Bulgarian name Княжеска градина literally means 'the Prince's Garden'. Княз (Knyaz) was the title of Bulgaria's ruler after liberation – today's Bulgaria is a republic, but the title lives on in this old green corner of Sofia. The garden shares the central axis of the old princely palace quarter, which is why it carries such a regal name. Locals still affectionately call it Княжеската градина, and city archives preserve photographs of it from over a century ago."
       },
       {
-        "id": "geography",
-        "title": "Location & Features",
-        "content": "Located in the center of Sofia, at 99A Evlogi i Hristo Georgiev Blvd. The park is easily accessible by public transport and offers spacious alleys for walking."
+        "id": "creation",
+        "title": "Born with the modern capital",
+        "content": "After 1878 Sofia began its rapid change from a small Ottoman town into the capital of the new Bulgarian state. Wide boulevards, public squares and European-style parks appeared one after another. The green layout of Prince's Garden took shape towards the end of the 19th century as part of this city-beautification drive, growing up together with the young Sofia University district beside it. The garden is therefore one of the earliest public green spaces of modern Sofia – a living piece of the capital's founding story."
       },
       {
-        "id": "architecture",
-        "title": "Vegetation & Design",
-        "content": "The park features diverse vegetation, including old trees, flower beds, and well-maintained alleys. The design combines aesthetics and functionality."
+        "id": "stories",
+        "title": "Fond memories of old Sofia",
+        "content": "Long before electric street lights and cars, the garden was the evening meeting point of the city: gentlemen and ladies strolled along its alleys, carriages waited at the edge of the park, and students and friends gathered to talk. Old photographs show the garden as a true 'urban salon'. Such memories are hard to verify one by one, but they explain why Sofians still speak of this small park as their own – a sentimental landmark of everyday city life."
       },
       {
-        "id": "protection",
-        "title": "Preservation & Management",
-        "content": "The park is maintained by Sofia Municipality and is a protected zone for recreation and tourism in the center of Sofia."
+        "id": "design",
+        "title": "Small in size, rich in detail",
+        "content": "The garden is compact but carefully composed. Geometric flower beds, straight tree-lined alleys and stately old trees frame each other, while neo-classical landmarks – the university's main building and the National Assembly – close the view. Dozens of tree species, including limes, maples and plane trees, give deep shade in summer and golden colours in autumn. Flower beds change with the seasons, making the garden worth a visit at almost any time of year."
+      },
+      {
+        "id": "seasons",
+        "title": "Through the seasons",
+        "content": "Spring and autumn are the most rewarding: in spring the flower beds bloom in fresh colours, while autumn turns the avenues gold. In summer the old trees keep the paths pleasantly cool, best enjoyed in the morning or late afternoon. Winter brings quiet and peace – after a snowfall the garden looks like a classical postcard in the very heart of Sofia."
+      },
+      {
+        "id": "today",
+        "title": "A green heart, cared for together",
+        "content": "Sitting at 99A Evlogi i Hristo Georgiev Blvd, between the university and the parliament, the garden remains a protected green space managed by Sofia Municipality. Old town, churches, galleries and shopping streets all radiate from here, making it a natural starting point for exploring Sofia on foot. Please help keep it beautiful: keep to the paths, do not pick flowers, and place rubbish in the bins."
+      },
+      {
+        "id": "monument",
+        "title": "The Soviet Army Monument – a page of 20th-century history",
+        "content": "Few visitors realise that Prince's Garden once carried a piece of 20th-century political history. In its eastern section, towards Tsar Osvoboditel Boulevard and the Eagles' Bridge, the Monument to the Soviet Army was erected in 1954 – a composition of bronze figures and a high relief created to mark the tenth anniversary of the Red Army's entry into Bulgaria in 1944. For decades the monument was at once an official symbol and a source of controversy. In 2011 its statues were famously painted overnight in bright 'comic-book' colours as a statement of street art and protest. In 2023–2024, following a decision by Sofia's municipal council, the sculptural group was removed. Memories of the monument remain divided, yet the green space around its former site continues to be part of everyday life in the centre of Sofia."
+      }
+    ]
+  },
+  "landmarks": {
+    "title": "Landmarks & Attractions Around Prince's Garden",
+    "intro": "When visiting Prince's Garden, visitors can easily explore surrounding historical landmarks and points of interest, including Sofia University St. Kliment Ohridski and Alexander Nevsky Cathedral.",
+    "items": [
+      {
+        "name": "Sofia University St. Kliment Ohridski",
+        "desc": "Bulgaria's oldest and largest university, located directly beside the garden."
+      },
+      {
+        "name": "Alexander Nevsky Cathedral",
+        "desc": "One of Sofia's most iconic landmarks and among the largest Eastern Orthodox cathedrals in the world."
+      },
+      {
+        "name": "National Assembly",
+        "desc": "The seat of the Bulgarian parliament, standing on Tsar Osvoboditel Boulevard facing the park."
+      },
+      {
+        "name": "Sofia University Botanical Garden",
+        "desc": "A compact botanical garden of Sofia University at 49 Moskovska St, just a few minutes' walk away – its visiting schedule is set by the university and may be limited."
       }
     ]
   },
@@ -84,6 +157,50 @@
       {
         "question": "Is the park accessible for wheelchair users?",
         "answer": "Yes, the alleys are flat and accessible for wheelchair users and people with reduced mobility."
+      },
+      {
+        "question": "What are the best times to visit Prince's Garden?",
+        "answer": "Spring and autumn are ideal, when the flower alleys bloom and the colors are at their best. Summer offers shade from the trees, while winter visits are quiet and peaceful."
+      },
+      {
+        "question": "How do I get to Prince's Garden?",
+        "answer": "Prince's Garden is located in Sofia Center at Evlogi i Hristo Georgiev Blvd 99A, adjacent to Sofia University. Take Metro Line 1 or Line 4 to Sofia University St. Kliment Ohridski station, or use buses 9, 72, 76, 84, 94, 204, 604 and trams 10, 12, 15, 18."
+      },
+      {
+        "question": "What can I see around Prince's Garden?",
+        "answer": "Nearby landmarks include Sofia University St. Kliment Ohridski, Alexander Nevsky Cathedral, the National Assembly, and the National Gallery, all within easy walking distance."
+      },
+      {
+        "question": "Are there public toilets near the garden?",
+        "answer": "Yes, public toilets are usually available in the city centre, for example near metro stations, municipal and cultural buildings, and larger shopping facilities – typically a 5–10 minute walk away. Opening hours vary."
+      },
+      {
+        "question": "Where can I park if I drive to Prince's Garden?",
+        "answer": "Parking in the immediate area is limited. Surrounding streets are mostly paid zones (Sofia's blue and green parking zones), paid by SMS or parking machine. Public transport or a taxi is often easier than driving into the centre."
+      },
+      {
+        "question": "Are there places to eat near the garden?",
+        "answer": "Yes. The boulevards around the garden and the Sofia University area are full of cafés, restaurants, bakeries and take-away places, most within a 5–10 minute walk and suiting a range of budgets."
+      },
+      {
+        "question": "Is there a supermarket or convenience store nearby?",
+        "answer": "Yes, minimarkets and larger supermarkets are common in central Sofia and can usually be found within a 5–10 minute walk of the park – convenient for drinks, snacks and picnic supplies."
+      },
+      {
+        "question": "Where should I stay to visit the park easily?",
+        "answer": "Anywhere in the city centre works well. Hotels, hostels and apartments within walking distance of the garden let you also reach Sofia University, Alexander Nevsky Cathedral and the old town on foot."
+      },
+      {
+        "question": "Is there an ice skating rink in Prince's Garden in winter?",
+        "answer": "Yes. During the winter season Prince's Garden usually hosts a large seasonal open-air ice rink (known locally as Ice Park Sofia), typically running from early December to the end of February with daily timed sessions. The rink is ticket-based and skates can be rented on site. The schedule is announced every year and depends on the weather, so check the current season's announcements before you go."
+      },
+      {
+        "question": "Are there monuments in Prince's Garden?",
+        "answer": "Historically, the Monument to the Soviet Army stood in the eastern part of the garden towards Tsar Osvoboditel Boulevard. Erected in 1954, its sculptural group was removed in 2023–2024 after a decision by Sofia's municipal council; the green space around the former site remains part of the park. Its history is still a subject of public debate."
+      },
+      {
+        "question": "Is there a botanical garden near Prince's Garden?",
+        "answer": "Yes. Sofia University's compact central Botanical Garden at 49 Moskovska St is just a few minutes' walk from the park. Its opening schedule and visiting arrangements are announced by the university and can be limited, so check the current details before planning a visit."
       }
     ]
   },
@@ -98,7 +215,7 @@
     "city": "City",
     "cityValue": "Sofia",
     "googleRating": "Google Rating",
-    "googleRatingValue": "4.5 (7,870)",
+    "googleRatingValue": "4.5 (7,901)",
     "address": "Address",
     "addressValue": "Sofia Center, Evlogi i Hristo Georgiev Blvd 99A, 1000 Sofia, Bulgaria",
     "telephone": "Contact Phone",
@@ -222,12 +339,15 @@
   },
   "mapSection": {
     "title": "Map Location",
-    "subtitle": "M8RM+3G, Sofia, Bulgaria",
-    "openMaps": "View on Google Maps"
+    "subtitle": "Evlogi i Hristo Georgiev Blvd 99А · M8RM+3G, Sofia, Bulgaria",
+    "openMaps": "View on Google Maps",
+    "officialPortalNote": "For official updates and regional tourism information, visit the ",
+    "officialPortalLabel": "Sofia City Tourism Portal (Visit Sofia)"
   },
   "footer": {
-    "brandName": "Prince's Garden",
+    "brandName": "Prince's Garden (Княжеска градина)",
     "brandSubtitle": "Park · Sofia, Bulgaria",
+    "contactTitle": "Address & Contact",
     "rights": "© 2026 Independent Tourism Research Project · All Rights Reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -240,11 +360,161 @@
       "ninkn": "NIKN",
       "mfa": "MFA - Consular Services"
     },
-    "disclaimer": "This website is an independent third-party tourism information project. We are not affiliated with the local government or any other official agencies."
+    "disclaimer": "This website is an independent third-party tourism information project. We are not affiliated with the local government or any other official agencies.",
+    "imageCredit": "Image Ownership: All images displayed on this website belong to their respective original photographers. All copyrights are reserved to the photographers."
   },
   "officialManagement": {
     "title": "About Prince's Garden",
     "text": "Prince's Garden is managed and maintained by Sofia Municipality. The park is a protected zone for recreation and tourism in the center of Sofia."
+  },
+  "sources": {
+    "title": "Sources & References",
+    "subtitle": "Official and authoritative references used for this visitor guide.",
+    "items": [
+      {
+        "label": "Google Maps - Prince's Garden",
+        "url": "https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8"
+      },
+      {
+        "label": "Sofia City Tourism Portal (Visit Sofia)",
+        "url": "http://visitsofia.bg/"
+      },
+      {
+        "label": "Ministry of Tourism of Bulgaria",
+        "url": "https://www.tourism.government.bg/"
+      },
+      {
+        "label": "Sofia Municipality",
+        "url": "https://www.sofia.bg/en"
+      },
+      {
+        "label": "Ministry of Culture of Bulgaria",
+        "url": "https://mc.government.bg/"
+      },
+      {
+        "label": "NINKN - National Institute for Immovable Cultural Heritage",
+        "url": "http://ninkn.bg/"
+      }
+    ]
+  },
+  "weather": {
+    "title": "Weather & Today's Tips",
+    "subtitle": "Current conditions, practical suggestions and a 7-day outlook for Prince's Garden.",
+    "nowLabel": "Now",
+    "updated": "Updated",
+    "todayTitle": "Today at a glance",
+    "feelsLike": "Feels like",
+    "wind": "Wind",
+    "precip": "Rain chance",
+    "uv": "UV",
+    "adviceTitle": "Daily tips for visitors",
+    "riskTitle": "Weather alert",
+    "forecastTitle": "7-Day Forecast",
+    "dayToday": "Today",
+    "dayTomorrow": "Tomorrow",
+    "unavailable": "Weather information is temporarily unavailable. Please check again a little later.",
+    "conditions": {
+      "clear": "Sunny",
+      "partly": "Partly cloudy",
+      "cloudy": "Cloudy",
+      "fog": "Fog",
+      "drizzle": "Light rain",
+      "rain": "Rain",
+      "rainheavy": "Heavy rain",
+      "snow": "Snow",
+      "thunder": "Thunderstorm"
+    },
+    "uvLevels": {
+      "low": "Low",
+      "mid": "Moderate",
+      "high": "Strong",
+      "veryHigh": "Very strong"
+    },
+    "windLevels": {
+      "calm": "Light air",
+      "breeze": "Gentle breeze",
+      "fresh": "Fresh breeze",
+      "strong": "Strong wind",
+      "gale": "Gale"
+    },
+    "groups": {
+      "outfit": "What to wear",
+      "plan": "What to do",
+      "gear": "Pack these"
+    },
+    "tips": {
+      "riskThunder": "Thunderstorm expected – avoid open areas and sheltering under trees, and move under cover if a storm catches you.",
+      "riskWind": "Strong winds – keep away from signage, scaffolding and anything that could fall.",
+      "riskFog": "Dense fog – visibility is poor; take extra care when driving or crossing the street.",
+      "outfitHeat": "It will feel hot – choose light, breathable clothing.",
+      "outfitCold": "It will be cold – dress warmly before heading out.",
+      "outfitDiff": "Day and night temperatures differ a lot – an extra layer is handy.",
+      "outfitRain": "Rain is likely – a water-resistant jacket will keep you comfortable.",
+      "outfitWind": "It is windy – a windbreaker-style layer is the comfortable choice.",
+      "planThunder": "Skip open-air plans; if a storm begins, head to indoor or sheltered spots promptly.",
+      "planRainHeavy": "Heavy rain is expected – postpone outdoor plans or keep to covered routes.",
+      "planRainLight": "Light rain may fall – choose covered or tree-lined paths, or delay outdoor plans.",
+      "planSunny": "Fine weather – ideal for strolling, picnics and photographs in the garden.",
+      "planCloudy": "Soft, diffused light with no harsh sun – comfortable for a long walk.",
+      "planFog": "Mist will limit the views – sightseeing is less rewarding today.",
+      "planSnow": "Snow is possible – take care on slippery paths.",
+      "planPrecip": "A good chance of rain – keep the itinerary flexible and have an indoor option ready.",
+      "planHeat": "The middle of the day will be hottest – plan your walk for the morning or late afternoon.",
+      "planCold": "It is very cold – keep outdoor time short and warm up indoors between strolls.",
+      "gearUmbrella": "Umbrella",
+      "gearRaincoat": "Rain jacket or raincoat",
+      "gearSun": "Sunscreen, sunglasses, sun hat",
+      "gearWater": "Drinking water",
+      "gearJacket": "Light jacket or cardigan",
+      "gearWarm": "Warm coat, scarf and gloves"
+    }
+  },
+  "amenities": {
+    "title": "Practical Services Nearby",
+    "subtitle": "Type-level guidance only, kept neutral and objective – no particular business is recommended. Walking times are approximate.",
+    "note": "Note: opening hours, prices and availability change frequently. Please check the latest details on a map or navigation app before you set off.",
+    "cards": [
+      {
+        "id": "restroom",
+        "title": "Public toilets",
+        "text": "Public toilets are usually available in the city centre, for example near metro stations, municipal and cultural buildings, and larger shopping facilities. Count on about a 5–10 minute walk from the garden; opening hours and availability vary."
+      },
+      {
+        "id": "water",
+        "title": "Drinking water",
+        "text": "Drinking fountains are not guaranteed inside the park. Bring your own bottle – you can buy water at nearby shops or cafés, or refill at your accommodation before you leave."
+      },
+      {
+        "id": "parking",
+        "title": "Parking",
+        "text": "The garden sits in a pedestrian-friendly area. Paid on-street parking (Sofia's blue and green paid zones) operates on surrounding streets, with payment by SMS or parking machine. Spaces fill quickly on weekdays, so public transport is the easiest option. Look for designated disabled bays where provided."
+      },
+      {
+        "id": "dining",
+        "title": "Where to eat",
+        "text": "Restaurants, cafés, bakeries and take-away places line the nearby boulevards and the area around Sofia University, mostly within a 5–10 minute walk. There is something for every budget; check current opening hours before visiting."
+      },
+      {
+        "id": "supermarket",
+        "title": "Shops & supermarkets",
+        "text": "Convenience stores, minimarkets and larger supermarkets are common in the city centre, usually within a 5–10 minute walk of the garden – handy for drinks, snacks and picnic supplies."
+      },
+      {
+        "id": "pharmacy",
+        "title": "Pharmacy & first aid",
+        "text": "Pharmacies are widespread in central Sofia, with the nearest usually about 5–10 minutes away on foot. Pharmacies keep a rotating night-duty roster, so check which one is open outside regular hours. For emergencies, dial 112."
+      },
+      {
+        "id": "hotel",
+        "title": "Where to stay",
+        "text": "Hotels, hostels and holiday apartments are plentiful in the city centre, many within a short walk of the garden. Staying centrally also lets you reach Sofia University, the cathedral and the old town on foot."
+      },
+      {
+        "id": "charging",
+        "title": "Fuel & EV charging",
+        "text": "The garden is in the pedestrian centre, so there are no filling stations directly beside it. Fuel stations can be found on the main ring roads a short drive away. Electric-vehicle chargers are spread across Sofia – check your navigation or charging app for the nearest working unit and its live status."
+      }
+    ]
   },
   "privacy": {
     "title": "Privacy Policy",

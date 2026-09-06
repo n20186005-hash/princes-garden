@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
+import { site } from '@/config/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://princesgardensofia.com';
+  const baseUrl = site.url;
   
   const entries: MetadataRoute.Sitemap = [];
 

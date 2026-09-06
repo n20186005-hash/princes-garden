@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations, useLocale, useMessages } from 'next-intl';
 import type { Metadata } from 'next';
+import { site } from '@/config/site';
 
 export async function generateMetadata({
   params,
@@ -8,7 +9,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = 'https://princesgardensofia.com';
+  const baseUrl = site.url;
   const zhUrl = `${baseUrl}/zh/terms-of-service`;
   const enUrl = `${baseUrl}/en/terms-of-service`;
   const bgUrl = `${baseUrl}/bg/terms-of-service`;
@@ -21,7 +22,7 @@ export async function generateMetadata({
         'zh': zhUrl,
         'en': enUrl,
         'bg': bgUrl,
-        'x-default': enUrl,
+        'x-default': bgUrl,
       },
     },
   };

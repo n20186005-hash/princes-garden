@@ -3,6 +3,7 @@
 import { useTranslations, useMessages } from 'next-intl';
 import { useState, useCallback } from 'react';
 import Image from 'next/image';
+import { site } from '@/config/site';
 
 const photos = [
   { src: '/gallery/princes-garden-1.jpg', alt: 'Prince\'s Garden Photo 1' },
@@ -47,7 +48,7 @@ export default function Gallery() {
   };
   const closeLightbox = () => setIsLightboxOpen(false);
 
-  const mapsLink = 'https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8';
+  const mapsLink = site.mapsShareUrl;
 
   return (
     <>

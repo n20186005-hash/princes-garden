@@ -69,6 +69,10 @@ export default function CookieSettingsClient() {
 
   function handleSave() {
     localStorage.setItem('cookiePrefs', JSON.stringify({ analytics, marketing }));
+    // 通知布局中的 GA4 加载器立即应用新的同意状态
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('analytics-consent-changed'));
+    }
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
   }

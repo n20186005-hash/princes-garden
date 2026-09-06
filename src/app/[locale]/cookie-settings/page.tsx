@@ -1,5 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
+import { site } from '@/config/site';
 import CookieSettingsClient from './CookieSettingsClient';
 
 export async function generateMetadata({
@@ -8,7 +9,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = 'https://princesgardensofia.com';
+  const baseUrl = site.url;
   const zhUrl = `${baseUrl}/zh/cookie-settings`;
   const enUrl = `${baseUrl}/en/cookie-settings`;
   const bgUrl = `${baseUrl}/bg/cookie-settings`;
@@ -21,7 +22,7 @@ export async function generateMetadata({
         'zh': zhUrl,
         'en': enUrl,
         'bg': bgUrl,
-        'x-default': enUrl,
+        'x-default': bgUrl,
       },
     },
   };

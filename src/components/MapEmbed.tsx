@@ -1,9 +1,8 @@
 import { useTranslations } from 'next-intl';
+import { site } from '@/config/site';
 
 export default function MapEmbed() {
   const t = useTranslations('mapSection');
-
-  const mapsLink = 'https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8';
 
   return (
     <section id="map" className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
@@ -23,17 +22,17 @@ export default function MapEmbed() {
           style={{ border: '1px solid var(--map-border)' }}
         >
           {/*
-            NOTE: Google Maps attribution is hidden via CSS (.gm-style-cc, .gmnoprint).
-            This is for visual cleanliness only. Google's Terms of Service apply.
+            Google Maps 官方嵌入（景点精确坐标）。地图图例隐藏仅作视觉处理，
+            需遵守 Google Maps 服务条款。
           */}
           <iframe
-            src="https://maps.google.com/maps?q=Prince%27s+Garden+Sofia+Bulgaria&output=embed"
+            src={site.mapsEmbedSrc}
             width="100%"
             height="450"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
             title="Google Maps - Prince's Garden"
           />
         </div>
@@ -41,7 +40,7 @@ export default function MapEmbed() {
         {/* Open in Google Maps */}
         <div className="mt-6 flex justify-center">
           <a
-            href={mapsLink}
+            href={site.mapsShareUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-white transition-colors"
@@ -59,6 +58,22 @@ export default function MapEmbed() {
             </svg>
           </a>
         </div>
+
+        {/* 权威出站链接 */}
+        {t.has('officialPortalNote') && (
+          <p className="mt-6 text-center text-sm" style={{ color: 'var(--text-muted)' }}>
+            {t('officialPortalNote')}
+            <a
+              href={site.govtTourismUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline font-medium"
+              style={{ color: 'var(--accent)' }}
+            >
+              {t('officialPortalLabel')}
+            </a>
+          </p>
+        )}
       </div>
     </section>
   );

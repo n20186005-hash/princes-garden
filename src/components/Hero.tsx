@@ -1,10 +1,11 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { site } from '@/config/site';
 
 export default function Hero() {
   const t = useTranslations('hero');
 
-  const mapsLink = 'https://maps.app.goo.gl/hy2Jmwz8QuZS41Sd8';
+  const mapsLink = site.mapsShareUrl;
 
   return (
     <section className="relative min-h-screen flex items-end pb-16 sm:pb-24 overflow-hidden">
@@ -12,7 +13,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/gallery/princes-garden-1.jpg"
-          alt="Prince's Garden"
+          alt={t('imageAlt')}
           fill
           priority
           sizes="100vw"
