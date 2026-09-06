@@ -1,6 +1,7 @@
 import { getTranslations, getLocale } from 'next-intl/server';
 import {
   type WeatherData,
+  type DailyWeather,
   categoryOf,
   iconOf,
   windForce,
@@ -21,7 +22,20 @@ interface TipEntry {
   key: string;
 }
 
-/** 依据天气数据组合出“普通游客能直接执行”的建议（多选展示，不满足条件即隐藏） */
+const GROUP_ICONS: Record<'outfit' | 'plan' | 'gear', string> = {
+  outfit: '🧥',
+  plan: '📍',
+  gear: '🎒',
+};
+
+/**
+ * 依据天气数据组合出“普通游客能直接执行”的建议。
+ * 规则要点：
+ *  - 条件满足才显示，不满足的条目一律不渲染；
+ *  - 降水概率是“概率”而非“一定下雨”，文案不使用绝对化表述；
+ *  - 风险条目（雷雨/大雨/结冰/大风/浓雾）优先置顶；
+ *  - 面向城市公园游客场景，不引入海边/登山等无关语境。
+ */
 function buildTips(data: WeatherData): TipEntry[] {
   const c = data.current;
   const today = data.daily[0];
@@ -37,30 +51,32 @@ function buildTips(data: WeatherData): TipEntry[] {
     catToday === 'rain' || catToday === 'rainheavy' || catToday === 'drizzle';
   const rainyNow =
     catNow === 'rain' || catNow === 'rainheavy' || catNow === 'drizzle';
+  const snowyToday = catToday === 'snow';
+  const snowyNow = catNow === 'snow';
+  const icyRisk = (snowyToday && max <= 2) || (snowyNow && c.temp <= 2);
 
   const tips: TipEntry[] = [];
   const add = (group: TipGroup, key: string) => tips.push({ group, key });
 
-  // ---- 风险（优先级最高）----
+  // ---- 风险（优先级最高，预警类）----
   if (catToday === 'thunder' || catNow === 'thunder') add('risk', 'riskThunder');
+  if (catToday === 'rainheavy' || catNow === 'rainheavy') add('risk', 'riskRainHeavy');
+  if (icyRisk) add('risk', 'riskSnowIce');
   if (c.windKmh >= 50) add('risk', 'riskWind');
   if (catToday === 'fog' || catNow === 'fog') add('risk', 'riskFog');
 
-  // ---- 出行穿搭 ----
+  // ---- 出行穿搭（按体感温度与降水组合）----
   if (max >= 32) add('outfit', 'outfitHeat');
   else if (max <= 10) add('outfit', 'outfitCold');
   if (max - min > 8) add('outfit', 'outfitDiff');
-  if (rainyToday || rainyNow || catToday === 'snow' || catNow === 'snow')
-    add('outfit', 'outfitRain');
+  if (rainyToday || rainyNow || snowyToday || snowyNow) add('outfit', 'outfitRain');
   if (c.windKmh >= 29) add('outfit', 'outfitWind');
 
-  // ---- 游玩安排 ----
+  // ---- 游玩安排（公园/户外场景适配）----
   if (catToday === 'thunder') add('plan', 'planThunder');
   else if (catToday === 'rainheavy') add('plan', 'planRainHeavy');
-  else if (catToday === 'rain' || catToday === 'drizzle')
-    add('plan', 'planRainLight');
-  else if (catToday === 'clear' || catToday === 'partly')
-    add('plan', 'planSunny');
+  else if (catToday === 'rain' || catToday === 'drizzle') add('plan', 'planRainLight');
+  else if (catToday === 'clear' || catToday === 'partly') add('plan', 'planSunny');
   else if (catToday === 'cloudy') add('plan', 'planCloudy');
   else if (catToday === 'fog') add('plan', 'planFog');
   else if (catToday === 'snow') add('plan', 'planSnow');
@@ -68,9 +84,8 @@ function buildTips(data: WeatherData): TipEntry[] {
   if (max >= 32) add('plan', 'planHeat');
   if (max <= 5) add('plan', 'planCold');
 
-  // ---- 随身物品 ----
-  if (pop >= 60 || rainyToday || rainyNow || catToday === 'snow')
-    add('gear', 'gearUmbrella');
+  // ---- 随身物品（按需出现）----
+  if (pop >= 60 || rainyToday || rainyNow || snowyToday) add('gear', 'gearUmbrella');
   if (catToday === 'rainheavy' || catToday === 'thunder' || pop >= 70)
     add('gear', 'gearRaincoat');
   if (uv != null && (uv >= 5 || (catToday === 'clear' && uv >= 3)))
@@ -82,6 +97,14 @@ function buildTips(data: WeatherData): TipEntry[] {
   return tips;
 }
 
+/** 未来 3 天内是否有雷雨/大雨等需要提前知晓的信号（仅作提醒，不渲染进今日建议） */
+function hasUpcomingRisks(daily: DailyWeather[]): boolean {
+  return daily.slice(1, 7).some((d) => {
+    const cat = categoryOf(d.code);
+    return cat === 'thunder' || cat === 'rainheavy';
+  });
+}
+
 export default async function WeatherSection({
   data,
 }: {
@@ -91,8 +114,7 @@ export default async function WeatherSection({
     getTranslations('weather'),
     getLocale(),
   ]);
-  const localeTag =
-    locale === 'zh' ? 'zh-CN' : locale === 'bg' ? 'bg-BG' : 'en';
+  const localeTag = locale === 'zh' ? 'zh-CN' : locale === 'bg' ? 'bg-BG' : 'en';
 
   const dayFmt = new Intl.DateTimeFormat(localeTag, {
     weekday: 'short',
@@ -121,8 +143,9 @@ export default async function WeatherSection({
   const today = daily[0];
   const tips = buildTips(data);
   const risks = tips.filter((i) => i.group === 'risk');
-  const groups: TipGroup[] = ['outfit', 'plan', 'gear'];
+  const groups = ['outfit', 'plan', 'gear'] as const;
   const updatedLocal = timeFmt.format(new Date(data.updatedAt));
+  const upcomingRisks = hasUpcomingRisks(daily);
 
   return (
     <section className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
@@ -148,12 +171,17 @@ export default async function WeatherSection({
                 {iconOf(catNow)}
               </span>
               <div>
-                <div className="text-6xl font-bold" style={{ color: 'var(--text-primary)' }}>
+                <div className="text-6xl font-bold leading-none" style={{ color: 'var(--text-primary)' }}>
                   {Math.round(current.temp)}°
                 </div>
-                <div className="text-sm mt-1" style={{ color: 'var(--text-secondary)' }}>
+                <div className="text-sm mt-2" style={{ color: 'var(--text-secondary)' }}>
                   {t(`conditions.${catNow}`)}
                 </div>
+                {today && (
+                  <div className="text-sm mt-1 font-medium" style={{ color: 'var(--accent)' }}>
+                    {Math.round(today.tMax)}° / {Math.round(today.tMin)}°
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -166,8 +194,12 @@ export default async function WeatherSection({
             <h3 className="font-display text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
               {t('todayTitle')}
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
               <Metric label={t('feelsLike')} value={`${Math.round(current.feelsLike)}°`} />
+              <Metric
+                label={t('humidity')}
+                value={current.humidity != null ? `${current.humidity}%` : '—'}
+              />
               <Metric
                 label={t('wind')}
                 value={`${Math.round(current.windKmh)} km/h`}
@@ -179,25 +211,32 @@ export default async function WeatherSection({
                   value={today.precipProb != null ? `${today.precipProb}%` : '—'}
                 />
               )}
-              {today && <Metric label={t('uv')} value={t(`uvLevels.${uvLevel(today.uv)}`)} />}
+              {today && (
+                <Metric label={t('uv')} value={t(`uvLevels.${uvLevel(today.uv)}`)} />
+              )}
             </div>
           </div>
         </div>
 
-        {/* 出行建议 */}
+        {/* 游客建议：风险优先置顶，三组按条件动态渲染 */}
         <div className="rounded-2xl p-6 sm:p-8 mb-8" style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)' }}>
-          <h3 className="font-display text-xl font-semibold mb-5" style={{ color: 'var(--text-primary)' }}>
-            {t('adviceTitle')}
-          </h3>
+          <div className="flex flex-wrap items-baseline justify-between gap-2 mb-5">
+            <h3 className="font-display text-xl font-semibold" style={{ color: 'var(--text-primary)' }}>
+              {t('adviceTitle')}
+            </h3>
+            <span className="text-xs" style={{ color: 'var(--text-muted)' }}>
+              {t('adviceHint')}
+            </span>
+          </div>
 
           {risks.length > 0 && (
             <div
-              className="rounded-xl p-4 mb-5 border-l-4"
+              className="rounded-xl px-4 py-4 mb-6 border-l-4"
               style={{ background: 'rgba(185, 28, 28, 0.06)', borderColor: '#b91c1c' }}
               role="alert"
             >
               <p className="font-semibold mb-2 flex items-center gap-2" style={{ color: '#b91c1c' }}>
-                <span aria-hidden="true">⚠️</span>
+                <span aria-hidden="true">🚨</span>
                 {t('riskTitle')}
               </p>
               <ul className="space-y-1.5">
@@ -210,13 +249,14 @@ export default async function WeatherSection({
             </div>
           )}
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {groups.map((group) => {
               const items = tips.filter((i) => i.group === group);
               if (items.length === 0) return null;
               return (
                 <div key={group}>
-                  <p className="text-sm font-semibold mb-3" style={{ color: 'var(--accent)' }}>
+                  <p className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: 'var(--accent)' }}>
+                    <span aria-hidden="true">{GROUP_ICONS[group]}</span>
                     {t(`groups.${group}`)}
                   </p>
                   <ul className="space-y-2">
@@ -234,6 +274,16 @@ export default async function WeatherSection({
               );
             })}
           </div>
+
+          {upcomingRisks && (
+            <p
+              className="text-xs mt-5 flex items-center gap-1.5"
+              style={{ color: 'var(--text-muted)' }}
+            >
+              <span aria-hidden="true">🔎</span>
+              {t('upcomingRiskNote')}
+            </p>
+          )}
         </div>
 
         {/* 未来多日预报 */}

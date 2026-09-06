@@ -20,6 +20,8 @@ export interface CurrentWeather {
   time: string;
   temp: number;
   feelsLike: number;
+  /** 相对湿度 0-100，缺省为 null */
+  humidity: number | null;
   windKmh: number;
   isDay: number;
   code: number;
@@ -136,6 +138,7 @@ export async function fetchWeather(): Promise<WeatherData | null> {
         time?: string;
         temperature_2m?: number;
         apparent_temperature?: number;
+        relative_humidity_2m?: number;
         is_day?: number;
         weather_code?: number;
         wind_speed_10m?: number;
@@ -158,6 +161,10 @@ export async function fetchWeather(): Promise<WeatherData | null> {
       time: cur.time ?? '',
       temp: Math.round(cur.temperature_2m ?? 0),
       feelsLike: Math.round(cur.apparent_temperature ?? cur.temperature_2m ?? 0),
+      humidity:
+        typeof cur.relative_humidity_2m === 'number'
+          ? Math.round(cur.relative_humidity_2m)
+          : null,
       windKmh: Math.round(cur.wind_speed_10m ?? 0),
       isDay: cur.is_day ?? 1,
       code: cur.weather_code ?? 3,
